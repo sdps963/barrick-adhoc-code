@@ -12,7 +12,3 @@ $permission = "rclw"
 $accountKeys = Get-AzStorageAccountKey -ResourceGroupName $ResourceGroup -Name $storageAccountName
 $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $accountKeys[0].Value 
 $token = New-AzStorageContainerSASToken -Name swenergy -Context $storageContext -Permission $permission -StartTime $now.AddHours(-1) -ExpiryTime $now.AddYears(1)
-
-
-
-
