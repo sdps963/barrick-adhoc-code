@@ -1,5 +1,5 @@
 #This script is used to create Service SAS for a specific container which give external access
-# Login to Microsoft Azure
+# Login to Microsoft Azure. This should give you an url.
 # Documentation : https://docs.microsoft.com/en-us/rest/api/storageservices/create-service-sas
 
 Connect-AzAccount
